@@ -24,7 +24,7 @@ if ($.isNode()) {
     cookiesArr = [$.getdata('CookieJD'), $.getdata('CookieJD2'), ...jsonParse($.getdata('CookiesJD') || "[]").map(item => item.cookie)].filter(item => !!item);
 }
 
-$.invitePinTaskList = ['EAstIPBmA6SskuxnxkvWTqELQUZ59zK0-Zh33JyDJUE','GDR8G_J3geZG7veDlLvZWxoSt6tOcHDv7x8nqG-jtYc','gB8WaU5yEdbVHzA0n5Ta7w']
+$.invitePinTaskList = ['ORuVIJSf06nd0xp3okC23Q','8jqmiXsWnOlumkhgBKWjNfZkjtx5FhYlMUlyBQtPRFU','7e0rkP-9fn8BLWSL-C20_A','KhnqM8C9LEQ9ueX60A2Chg','wv3j5LXJQS6fABAnsezC_7ZZwqrKfQt5QRPL97jYq3o','JMlwCduLQgAP_iIVU6vJZ2I99N0JYLj3BOdZkigNk-4','L0nQejdS45rfOmRjIcsTuQ','Dt5tR9wK-g5kvDmID4qYjA','nT_fmwtGUKBFh7VMBSY8qw']
 
 const JD_API_HOST = `https://api.m.jd.com/client.action`;
 message = ""
