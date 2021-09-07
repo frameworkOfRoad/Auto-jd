@@ -43,15 +43,15 @@ let tuanActiveId = ``, hasSend = false;
 const jxOpenUrl = `openjd://virtual?params=%7B%20%22category%22:%20%22jump%22,%20%22des%22:%20%22m%22,%20%22url%22:%20%22https://wqsd.jd.com/pingou/dream_factory/index.html%22%20%7D`;
 let cookiesArr = [], cookie = '', message = '', allMessage = '';
 const inviteCodes = [
- 'EHIxuqV1yGzYeVUNY6_5Cg==@2xju3sWz0106zModluzVkA==@qNiIrUBQAR9ioydf08Ghnw==@GfyDwB85b_nt2ywQLDDvtg==@x4NJnF8uYXYBp3ssrTk3hw==@RVHJJLAhocUEMLmfVaQIZA==@95pEv5KvP5qRK0R2GABXlQ==@Zly6mydWHdSQJALsa82NoA==@KCOrvjg86MznVINKzFa5fQ==',
-  'EHIxuqV1yGzYeVUNY6_5Cg==@2xju3sWz0106zModluzVkA==@qNiIrUBQAR9ioydf08Ghnw==@GfyDwB85b_nt2ywQLDDvtg==@x4NJnF8uYXYBp3ssrTk3hw==@RVHJJLAhocUEMLmfVaQIZA==@95pEv5KvP5qRK0R2GABXlQ==@Zly6mydWHdSQJALsa82NoA==@KCOrvjg86MznVINKzFa5fQ==',
-  'EHIxuqV1yGzYeVUNY6_5Cg==@2xju3sWz0106zModluzVkA==@qNiIrUBQAR9ioydf08Ghnw==@GfyDwB85b_nt2ywQLDDvtg==@x4NJnF8uYXYBp3ssrTk3hw==@RVHJJLAhocUEMLmfVaQIZA==@95pEv5KvP5qRK0R2GABXlQ==@Zly6mydWHdSQJALsa82NoA==@KCOrvjg86MznVINKzFa5fQ==',
-  'EHIxuqV1yGzYeVUNY6_5Cg==@2xju3sWz0106zModluzVkA==@qNiIrUBQAR9ioydf08Ghnw==@GfyDwB85b_nt2ywQLDDvtg==@x4NJnF8uYXYBp3ssrTk3hw==@RVHJJLAhocUEMLmfVaQIZA==@95pEv5KvP5qRK0R2GABXlQ==@Zly6mydWHdSQJALsa82NoA==@KCOrvjg86MznVINKzFa5fQ==',
-  'EHIxuqV1yGzYeVUNY6_5Cg==@2xju3sWz0106zModluzVkA==@qNiIrUBQAR9ioydf08Ghnw==@GfyDwB85b_nt2ywQLDDvtg==@x4NJnF8uYXYBp3ssrTk3hw==@RVHJJLAhocUEMLmfVaQIZA==@95pEv5KvP5qRK0R2GABXlQ==@Zly6mydWHdSQJALsa82NoA==@KCOrvjg86MznVINKzFa5fQ==',
-  'EHIxuqV1yGzYeVUNY6_5Cg==@2xju3sWz0106zModluzVkA==@qNiIrUBQAR9ioydf08Ghnw==@GfyDwB85b_nt2ywQLDDvtg==@x4NJnF8uYXYBp3ssrTk3hw==@RVHJJLAhocUEMLmfVaQIZA==@95pEv5KvP5qRK0R2GABXlQ==@Zly6mydWHdSQJALsa82NoA==@KCOrvjg86MznVINKzFa5fQ==',
-  'EHIxuqV1yGzYeVUNY6_5Cg==@2xju3sWz0106zModluzVkA==@qNiIrUBQAR9ioydf08Ghnw==@GfyDwB85b_nt2ywQLDDvtg==@x4NJnF8uYXYBp3ssrTk3hw==@RVHJJLAhocUEMLmfVaQIZA==@95pEv5KvP5qRK0R2GABXlQ==@Zly6mydWHdSQJALsa82NoA==@KCOrvjg86MznVINKzFa5fQ==',
-  'EHIxuqV1yGzYeVUNY6_5Cg==@2xju3sWz0106zModluzVkA==@qNiIrUBQAR9ioydf08Ghnw==@GfyDwB85b_nt2ywQLDDvtg==@x4NJnF8uYXYBp3ssrTk3hw==@RVHJJLAhocUEMLmfVaQIZA==@95pEv5KvP5qRK0R2GABXlQ==@Zly6mydWHdSQJALsa82NoA==@KCOrvjg86MznVINKzFa5fQ==',
-  'EHIxuqV1yGzYeVUNY6_5Cg==@2xju3sWz0106zModluzVkA==@qNiIrUBQAR9ioydf08Ghnw==@GfyDwB85b_nt2ywQLDDvtg==@x4NJnF8uYXYBp3ssrTk3hw==@RVHJJLAhocUEMLmfVaQIZA==@95pEv5KvP5qRK0R2GABXlQ==@Zly6mydWHdSQJALsa82NoA==@KCOrvjg86MznVINKzFa5fQ==',
+ '2xju3sWz0106zModluzVkA==@qNiIrUBQAR9ioydf08Ghnw==@GfyDwB85b_nt2ywQLDDvtg==@x4NJnF8uYXYBp3ssrTk3hw==@RVHJJLAhocUEMLmfVaQIZA==@95pEv5KvP5qRK0R2GABXlQ==@Zly6mydWHdSQJALsa82NoA==@KCOrvjg86MznVINKzFa5fQ==',
+  'EHIxuqV1yGzYeVUNY6_5Cg==@qNiIrUBQAR9ioydf08Ghnw==@GfyDwB85b_nt2ywQLDDvtg==@x4NJnF8uYXYBp3ssrTk3hw==@RVHJJLAhocUEMLmfVaQIZA==@95pEv5KvP5qRK0R2GABXlQ==@Zly6mydWHdSQJALsa82NoA==@KCOrvjg86MznVINKzFa5fQ==',
+  'EHIxuqV1yGzYeVUNY6_5Cg==@2xju3sWz0106zModluzVkA==@GfyDwB85b_nt2ywQLDDvtg==@x4NJnF8uYXYBp3ssrTk3hw==@RVHJJLAhocUEMLmfVaQIZA==@95pEv5KvP5qRK0R2GABXlQ==@Zly6mydWHdSQJALsa82NoA==@KCOrvjg86MznVINKzFa5fQ==',
+  'EHIxuqV1yGzYeVUNY6_5Cg==@2xju3sWz0106zModluzVkA==@qNiIrUBQAR9ioydf08Ghnw==@x4NJnF8uYXYBp3ssrTk3hw==@RVHJJLAhocUEMLmfVaQIZA==@95pEv5KvP5qRK0R2GABXlQ==@Zly6mydWHdSQJALsa82NoA==@KCOrvjg86MznVINKzFa5fQ==',
+  'EHIxuqV1yGzYeVUNY6_5Cg==@2xju3sWz0106zModluzVkA==@qNiIrUBQAR9ioydf08Ghnw==@GfyDwB85b_nt2ywQLDDvtg==@RVHJJLAhocUEMLmfVaQIZA==@95pEv5KvP5qRK0R2GABXlQ==@Zly6mydWHdSQJALsa82NoA==@KCOrvjg86MznVINKzFa5fQ==',
+  'EHIxuqV1yGzYeVUNY6_5Cg==@2xju3sWz0106zModluzVkA==@qNiIrUBQAR9ioydf08Ghnw==@GfyDwB85b_nt2ywQLDDvtg==@x4NJnF8uYXYBp3ssrTk3hw==@95pEv5KvP5qRK0R2GABXlQ==@Zly6mydWHdSQJALsa82NoA==@KCOrvjg86MznVINKzFa5fQ==',
+  'EHIxuqV1yGzYeVUNY6_5Cg==@2xju3sWz0106zModluzVkA==@qNiIrUBQAR9ioydf08Ghnw==@GfyDwB85b_nt2ywQLDDvtg==@x4NJnF8uYXYBp3ssrTk3hw==@RVHJJLAhocUEMLmfVaQIZA==@Zly6mydWHdSQJALsa82NoA==@KCOrvjg86MznVINKzFa5fQ==',
+  'EHIxuqV1yGzYeVUNY6_5Cg==@2xju3sWz0106zModluzVkA==@qNiIrUBQAR9ioydf08Ghnw==@GfyDwB85b_nt2ywQLDDvtg==@x4NJnF8uYXYBp3ssrTk3hw==@RVHJJLAhocUEMLmfVaQIZA==@95pEv5KvP5qRK0R2GABXlQ==@KCOrvjg86MznVINKzFa5fQ==',
+  'EHIxuqV1yGzYeVUNY6_5Cg==@2xju3sWz0106zModluzVkA==@qNiIrUBQAR9ioydf08Ghnw==@GfyDwB85b_nt2ywQLDDvtg==@x4NJnF8uYXYBp3ssrTk3hw==@RVHJJLAhocUEMLmfVaQIZA==@95pEv5KvP5qRK0R2GABXlQ==@Zly6mydWHdSQJALsa82NoA==',
 ];
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 $.tuanIds = [];
