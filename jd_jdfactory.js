@@ -47,7 +47,7 @@ if ($.isNode()) {
 } else {
   cookiesArr = [$.getdata('CookieJD'), $.getdata('CookieJD2'), ...jsonParse($.getdata('CookiesJD') || "[]").map(item => item.cookie)].filter(item => !!item);
 }
-let wantProduct = ``;//心仪商品名称
+let wantProduct = `笔单支装`;//心仪商品名称
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
 const inviteCodes = [`T0225KkcRBgR8AbVIR_zwv8NcACjVWnYaS5kRrbA`];
 !(async () => {
@@ -639,10 +639,14 @@ function readShareCode() {
     resolve()
   })
 }
-//格式化助力码
+//格式化
+
+码
 function shareCodesFormat() {
   return new Promise(async resolve => {
-    // console.log(`第${$.index}个京东账号的助力码:::${$.shareCodesArr[$.index - 1]}`)
+    // console.log(`第${$.index}个京东账号的
+    
+    码:::${$.shareCodesArr[$.index - 1]}`)
     $.newShareCodes = [];
     if ($.shareCodesArr[$.index - 1]) {
       $.newShareCodes = $.shareCodesArr[$.index - 1].split('@');
